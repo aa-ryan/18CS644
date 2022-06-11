@@ -246,7 +246,7 @@
 			   System.out.println("StrO : "+ strO);
 			   System.out.println("StrC : "+ strC);
 			   System.out.println("Str4 : "+ strA);
-			   System.out.println("Str6 : "+ strE);
+			   System.out.println("StrE : "+ strE);
            // Output
            // StrO : Java
            // StrC : YAMETE
