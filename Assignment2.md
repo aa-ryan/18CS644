@@ -63,7 +63,7 @@
 		```
 	* removeAll()
 		```java
-		boolean removeAll(Collection<E> C)
+		boolean removeAll(Collection<?> C)
 		// Returns true if argument C is removed else false, from invoking collection.
 		```
 ##### 2. Explain the constructors of HashSet class with an example program.
@@ -465,3 +465,11 @@ class Main {
 	// Default, case-sensitive sorted order: A C a b d
 	// Default, case-insensitive sorted order: A a b C d
 ```
+-----
+* String Buffer Constructors
+	```java
+	StringBuffer()
+	StringBuffer(int size)
+	StringBuffer(String str) 
+	StringBuffer(CharSequence chars)
+	```
