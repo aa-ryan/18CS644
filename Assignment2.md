@@ -452,4 +452,7 @@ class Main {
     System.out.println();
   }
 }
+	// Output
+	// d C b a A
+	// Default, case-sensitive sorted order: A C a b d
 ```
