@@ -450,9 +450,18 @@ class Main {
       System.out.print(s + " ");
     }
     System.out.println();
+
+    Arrays.sort(strs, icc);
+
+    System.out.print("Default, case-insensitive sorted order: ");
+    for (String s : strs) {
+      System.out.print(s + " ");
+    }
+    System.out.println();
   }
 }
 	// Output
 	// d C b a A
 	// Default, case-sensitive sorted order: A C a b d
+	// Default, case-insensitive sorted order: A a b C d
 ```
