@@ -287,11 +287,11 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 ```
 
 #### Write a program to connect to database with following information:
-Drive: JDBC/ODBC bridge URL: “jdbc,odbc:Ex” Username: “xyz” Password: “123”
-Retrieve all rows with marks >60 using prepared statement object. Assume following table:
-Table Name: STUDENT Fields: USN-Varchar (20)
-Marks – int
-Name- Varchar(25)
+Drive: JDBC/ODBC bridge URL: “jdbc,odbc:Ex” Username: “xyz” Password: “123”  
+Retrieve all rows with marks >60 using prepared statement object. Assume following table:  
+Table Name: STUDENT Fields: USN-Varchar (20)  
+Marks – int  
+Name- Varchar(25)  
 
 * Program
 ```java
