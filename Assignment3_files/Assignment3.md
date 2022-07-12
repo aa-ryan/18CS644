@@ -1,6 +1,6 @@
 ## Assignment 3
 
-#### Explain the life cycle of servlets.
+#### 1. (i) Explain the life cycle of servlets.
 * Servlet is small program that execute on the server side of a web connection.
 * Java servlet is more efficient, easier to use, more powerful, more portable, and
 cheaper than traditional CGI and than many alternative CGI-like technologies.
@@ -28,7 +28,7 @@ cheaper than traditional CGI and than many alternative CGI-like technologies.
 >There are three states of servlet new, ready, end. 
 >It is in new state when servlet is created. After invoking the init () method servlet comes to ready state. In ready state servlet invokes destroy method it comes to end state.
 
-#### Explain the difference between Servlets and CGI programs.
+#### 1. (ii) Explain the difference between Servlets and CGI programs.
 | Basis               | Servlet                                                                                           | CGI                                                                                                                                             |
 |---------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Approach            | It is thread based i.e. for every new request new thread is created.                              | It is process-based i.e. for every new request new process is created.                                                                          |
@@ -44,7 +44,7 @@ cheaper than traditional CGI and than many alternative CGI-like technologies.
 | Speed               | Its can speed is slower.                                                                          | It can speed is faster.                                                                                                                         |
 | Platform dependency | It can be Platform dependent                                                                      | It can be not Platform dependent.                                                                                                               |
 
-#### How to handle HTTP GET request and HTTP Post request? Explain with examples.
+#### 2. How to handle HTTP GET request and HTTP Post request? Explain with examples.
 
 * A client uses either the GET or POST method to pass information to a java servlet. 
 * Depending on the method used by the client either doGet() or doPost() method is called in servlet.
@@ -75,7 +75,7 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 }
 ```
 
-#### What is JSP? Explain the varies types of JSP tags with example.
+#### 3. What is JSP? Explain the varies types of JSP tags with example.
 
 - JSP
 	* A JSP is java server page is server side program that is similar in design and functionality to a java servlet. 
@@ -108,7 +108,7 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 		- Ex
 			`<% out.print("welcome to jsp"); %> `
 
-#### What is a cookies? Write the JSP program to create and read a cookie.
+#### 4. What is a cookies? Write the JSP program to create and read a cookie.
 * Cookies are text files stored on the client computer and they are kept for various information tracking purpose. 
 * Java Servlets transparently supports HTTP cookies. 
 * There are three steps involved in identifying returning users:
@@ -151,7 +151,7 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 	</body>
 </html>
 ```
-#### Write short notes on: i) Session tracking ii) Cookies in java servlet.
+#### 8.Write short notes on: i) Session tracking ii) Cookies in java servlet.
 * Session Tracking
 	- A session is created each time a client requests service from a java servlet. 
 	- The java servlet processes the request and response accordingly, after which the session is terminated. Many times the same client follows with another request to the same java servlet, java servlet requires information regarding the previous session to process request. However, HTTP is stateless protocol, meaning that there is not hold over from the previous sessions.
@@ -169,7 +169,7 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 		- Browser stores this information on local machine for future use.
 		- When next time browser sends any request to web server then it sends those cookies information to the server and server uses that information to identify the user.
 
-#### Explain four types of JDBC drivers.
+#### 9. Explain four types of JDBC drivers.
 *  JDBC stands for Java Database Connectivity, which is a standard Java API for database-independent connectivity between the Java programming language and a wide range of databases.
 *  JDBC to ODBC Driver
 	1. It is also called JDBC/ODBC Bridge , developed by MicroSoft.
@@ -190,7 +190,7 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 	1. Referred as Type 4 database protocol
 	2. SQL statements are transferred into the format required by the DBMS. 3. This is the fastest communication protocol.
 
-#### Describe the varies steps of JDBC with code snippets.
+#### 10. Describe the varies steps of JDBC with code snippets.
 * Loading the JDBC driver
 	- The jdbc driver must be loaded before the J2EE component can be connected to the database.
 	- Driver is loaded by calling the method and passing it the name of driver
@@ -245,7 +245,7 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 	- In the above code it return result from the query and executes the query and getString() is used to process the String retrived from the database.
 	- Terminating the connection with the DBMS, to terminate the connection Database.close() method is used.
 
-#### What is Result set? Explain types of Result sets in JDBC.
+#### 14. What is Result set? Explain types of Result sets in JDBC.
 1. ResultSet object contain the methods that are used to copy data from ResultSet into java collection object or variable for further processing.
 2. Data in the ResultSet is logically organized into the virtual table for further processing. Result set along with row and column it also contains meta data.
 3. ResultSet uses virtual cursor to point to a row of the table.
@@ -258,7 +258,7 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 	- Scroll Sensitive (ResultSet.TYPE_SCROLL_SENSITIVE)
 		- Scroll Sensitive ResultSet can scroll in both forward and backward directions. It can also be scrolled to an absolute position by calling the absolute() method. But it is sensitive to data changes. It will reflect the changes made to data while it is open.
 	
-#### What are the transactions? Write a program to execute a database transaction.
+#### 11. What are the transactions? Write a program to execute a database transaction.
 1. A transaction may consists of a set of SQL statements, each of which must be successfully completed for the transaction to be completed. If one fails SQL statements successfully completed must be rolled back.
 2. Transaction is not completed until the J2EE component calls the commit() method of the connection object. All SQL statements executed prior to the call to commit() method can be rolled back.
 3. Commit() method was automatically called in the program. DBMS has set AutoCommit feature.
@@ -286,7 +286,7 @@ public void doGet(HttpservletRequset request,HttpservletResponse response) throw
 	}
 ```
 
-#### Write a program to connect to database with following information:
+#### 15. Write a program to connect to database with following information:
 Drive: JDBC/ODBC bridge URL: “jdbc,odbc:Ex” Username: “xyz” Password: “123”  
 Retrieve all rows with marks >60 using prepared statement object. Assume following table:  
 Table Name: STUDENT Fields: USN-Varchar (20)  
